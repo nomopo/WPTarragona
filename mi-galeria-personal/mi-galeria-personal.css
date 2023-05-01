@@ -1,0 +1,40 @@
+.mi-galeria-lightbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.mi-galeria-lightbox a {
+  display: block;
+  width: calc(33.33% - 10px);
+  position: relative;
+}
+
+.mi-galeria-lightbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.mi-galeria-lightbox a:hover img {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .mi-galeria-lightbox a {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .mi-galeria-lightbox a {
+    width: 100%;
+  }
+}
